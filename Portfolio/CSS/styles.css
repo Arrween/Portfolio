@@ -1,0 +1,239 @@
+body {
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #226D68;
+    color: #333;
+    font-size: 20px;
+}
+
+header {
+    font-family: "Oooh Baby", cursive;
+    font-size: 30px;
+    display: flex;  /* Même niveau */
+    justify-content: space-evenly;  /* Centrer avec un espace */
+    align-items: center;    /* Même ligne */
+}
+
+nav ul {
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 30px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #226D68;
+    text-decoration: none;
+    transition: color 1s ease; /* Ajouter un style pour le survol et le clic */ 
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffcc00; /* Couleur jaune au survol ou lorsqu'actif */
+}
+
+.container {
+    max-width: 80%;
+    margin:  20px auto 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px; /* Ajouter un espace entre la social-box et le haut de la page */
+
+}
+
+#accueil {
+    max-width: 60%;
+    margin:  20px auto 0;
+    background-color: #fff;
+    margin-bottom: 100px;
+}
+#accueil h1 {
+    font-size : 40px;
+}
+#accueil img {
+    height: 200px;
+    width: 200px;
+    border: 2px solid #226D68; /* Bordure verte */
+    border-radius: 50%; /* Cadre rond */
+    overflow: hidden; /* Cacher tout contenu dépassant du cadre */
+    max-width: 100%; /* Pour s'assurer que l'image reste dans le cadre */
+    max-height: 100%; /* Pour s'assurer que l'image reste dans le cadre */
+}
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+.timeline li {
+    margin-bottom: 20px;
+}
+.year {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.details {
+    font-size: 16px;
+    color: #666;
+    margin-left: 20px;
+}
+
+.sup {
+    vertical-align: top;
+    font-size: 0.7em;
+}
+.parcours {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+
+.langues {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.languages {
+    list-style: none;
+    padding: 0;
+}
+
+.languages li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.language {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.proficiency {
+    font-size: 16px;
+    color: #666;
+    margin-left: 20px;
+}
+
+/* Personnalisation du bouton */
+button {
+    background-color: #226D68; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement interne */
+    border: none; /* Supprimer la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer; /* Curseur au survol */
+    transition: background-color 0.3s ease; /* Transition fluide */
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+#downloadCVBtn:hover {
+    background-color: #1A4E4A; /* Couleur de fond au survol */
+}
+
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.project {
+    position: relative;
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.project:hover .description {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+footer {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.social-box a {
+    margin-bottom: 10px; /* Ajouter un espace entre les liens */
+}
+
+.social-box img {
+    width: 25px;
+    height: 25px;
+}
+
+.scroll {
+    position: fixed;
+    bottom: 10%;
+    right: 15% ;
+    display: none;
+}
+
+.scroll img {
+    width: 40px;
+    height: 40px;
+}
+
+
+.contact-section h1 {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+    .header {
+        display: block;
+        flex-direction: column;
+        font-size: 24px;
+    }
+    
+    .header nav a {
+        margin: 5px 0;
+    }
+    
+}

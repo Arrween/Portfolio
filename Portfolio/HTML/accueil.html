@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Ania Garoui</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> Ania Garoui </h1>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="./projets.html">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="accueil">
+            <img src="../IMG/photo.jpg" alt="Une photo de moi-même">
+            <h1>Bienvenue sur mon portfolio</h1>           
+            <p>
+                Je suis Ania, étudiante en troisième année de licence Informatique à l'université du Mans.
+                <br>Je suis à la recherche d'un stage d'été ou au mieux d'une alternance pour conclure ma licence et enchaîner sur un master.
+                <br>N'hésitez pas à me contacter pour en apprendre davantage.
+                <br><br>
+                <button><a href="#contact">Me contacter</a></button>
+                <button><a href="./projets.html">Mes projets</a></button>
+            </p>
+            <h1>Compétences</h1>
+            <p>C / Python/ Prolog / HTML / CSS / JS / SQL / PostgreSQL / Bash / Environnements Linux / Shell / Microsoft office</p>
+            <button id="downloadCVBtn">Télécharger mon CV</button>
+            <div class="Parcours">
+                <h1>Parcours académique</h1>
+                <ul class="timeline">
+                    <li>
+                        <div class="year">2019</div>
+                        <div class="details">Baccalauréat en filière math élém - Tizi-Ouzou, Algérie</div>
+                    </li>
+                    <li>
+                        <div class="year">2020</div>
+                        <div class="details">1<sup>ère</sup> année en licence de sciences de la matière - USTHB, Alger, Algérie.</div>
+                    </li>
+                    <li>
+                        <div class="year">2021</div>
+                        <div class="details">1<sup>ère</sup> année en licence de physique, chimie - Le Mans Université, Le Mans, France.</div>
+                    </li>
+                    <li>
+                        <div class="year">2021</div>
+                        <div class="details">1<sup>ère</sup> année en licence informatique - Le Mans Université, Le Mans, France</div>
+                    </li>
+                    <li>
+                        <div class="year">2022</div>
+                        <div class="details">2<sup>ème</sup> année de licence informatique - Le Mans Université, Le Mans, France</div>
+                    </li>
+                </ul>
+                <p>Remarque : Toutes les années ont été obtenues avec succès.</p>
+            </div>
+            <div class="langues">
+                <h1>Langues parlées</h1>
+                <ul class="languages">
+                    <li>
+                        <div class="language">Français</div>
+                        <div class="proficiency">Bilingue</div>
+                    </li>
+                    <li>
+                        <div class="language">Anglais</div>
+                        <div class="proficiency">Professionnel</div>
+                    </li>
+                    <li>
+                        <div class="language">Arabe</div>
+                        <div class="proficiency">Courant</div>
+                    </li>
+                    <li>
+                        <div class="language">Amazigh</div>
+                        <div class="proficiency">Maternel</div>
+                    </li>
+                </ul>
+            </div>
+        
+            <section id="contact">
+                <div class="contact-section">
+                    <h1>Contactez-moi</h1>
+                    <p>Vous pouvez me joindre par téléphone ou par e-mail :</p>
+                    <div class="contact-info">
+                        <p><strong>Téléphone:</strong> <span id="phone">+33 7 53 03 48 24</span></p>
+                        <p><strong>Email:</strong> <span id="email">garouiania@gmail.com</span></p>
+                    </div>
+                </div>
+            </section>
+            
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Portfolio de Ania Garoui</p>
+            <div class="social-box">
+                <a href="https://github.com/Arrween" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/ania-garoui-a75a3a226/" target="_blank"><img src="https://www.lettresadhesives.net/storage/stickers/logo%20linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </footer>
+        <a href="#" id="scrollToTopBtn" class="scroll"><img src="../IMG/arrow.png" alt="Flèche vers le haut"></a>
+    </div>
+
+    <script src="../JS/portfolio.js"></script>
+</body>
+</html>
